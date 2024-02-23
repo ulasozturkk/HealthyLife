@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523423CB2B88B028001F8EE0 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523423CA2B88B028001F8EE0 /* BaseView.swift */; };
 		52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */; };
-		52DA5F8F2B889A2B00A97A77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F8E2B889A2B00A97A77 /* SceneDelegate.swift */; };
 		52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F902B889A2B00A97A77 /* ViewController.swift */; };
-		52DA5F942B889A2B00A97A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F922B889A2B00A97A77 /* Main.storyboard */; };
 		52DA5F962B889A2C00A97A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F952B889A2C00A97A77 /* Assets.xcassets */; };
 		52DA5F992B889A2C00A97A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F972B889A2C00A97A77 /* LaunchScreen.storyboard */; };
+		52DA5FA12B889B6A00A97A77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5FA02B889B6A00A97A77 /* GoogleService-Info.plist */; };
+		A02BDC7C3E5909A74EE83774 /* Pods_HealthyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619E75416115637E82D5CDF8 /* Pods_HealthyLife.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B4E39DF478908EA0ED21156 /* Pods-HealthyLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthyLife.release.xcconfig"; sourceTree = "<group>"; };
+		523423C72B88A9C5001F8EE0 /* Pods_HealthyLife.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_HealthyLife.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HealthyLife-fcskodtsggdzgbaveizdzzayxjzc/Build/Products/Debug-iphoneos/Pods_HealthyLife.framework"; sourceTree = "<group>"; };
+		523423CA2B88B028001F8EE0 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		52DA5F892B889A2B00A97A77 /* HealthyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52DA5F8E2B889A2B00A97A77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52DA5F902B889A2B00A97A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52DA5F932B889A2B00A97A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52DA5F952B889A2C00A97A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DA5F982B889A2C00A97A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DA5F9A2B889A2C00A97A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DA5FA02B889B6A00A97A77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		619E75416115637E82D5CDF8 /* Pods_HealthyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69AC7B532FE0188F60439EFE /* Pods-HealthyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLife.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLife/Pods-HealthyLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02BDC7C3E5909A74EE83774 /* Pods_HealthyLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		523423C82B88B013001F8EE0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		523423C92B88B019001F8EE0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				523423CA2B88B028001F8EE0 /* BaseView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		52DA5F802B889A2B00A97A77 = {
 			isa = PBXGroup;
 			children = (
 				52DA5F8B2B889A2B00A97A77 /* HealthyLife */,
 				52DA5F8A2B889A2B00A97A77 /* Products */,
+				EF952832D66B80FC67AE2281 /* Pods */,
+				8EF2C4C0D9A1B98C84127F11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,34 @@
 		52DA5F8B2B889A2B00A97A77 /* HealthyLife */ = {
 			isa = PBXGroup;
 			children = (
+				523423C92B88B019001F8EE0 /* Classes */,
+				523423C82B88B013001F8EE0 /* Features */,
 				52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */,
-				52DA5F8E2B889A2B00A97A77 /* SceneDelegate.swift */,
 				52DA5F902B889A2B00A97A77 /* ViewController.swift */,
-				52DA5F922B889A2B00A97A77 /* Main.storyboard */,
 				52DA5F952B889A2C00A97A77 /* Assets.xcassets */,
 				52DA5F972B889A2C00A97A77 /* LaunchScreen.storyboard */,
 				52DA5F9A2B889A2C00A97A77 /* Info.plist */,
 			);
 			path = HealthyLife;
+			sourceTree = "<group>";
+		};
+		8EF2C4C0D9A1B98C84127F11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52DA5FA02B889B6A00A97A77 /* GoogleService-Info.plist */,
+				523423C72B88A9C5001F8EE0 /* Pods_HealthyLife.framework */,
+				619E75416115637E82D5CDF8 /* Pods_HealthyLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF952832D66B80FC67AE2281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B4E39DF478908EA0ED21156 /* Pods-HealthyLife.release.xcconfig */,
+				69AC7B532FE0188F60439EFE /* Pods-HealthyLife.debug.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52DA5F9D2B889A2C00A97A77 /* Build configuration list for PBXNativeTarget "HealthyLife" */;
 			buildPhases = (
+				AF836B89D6B5FDC6715A6DF3 /* [CP] Check Pods Manifest.lock */,
 				52DA5F852B889A2B00A97A77 /* Sources */,
 				52DA5F862B889A2B00A97A77 /* Frameworks */,
 				52DA5F872B889A2B00A97A77 /* Resources */,
+				7F53988018754F36BB45C954 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,35 +170,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DA5F992B889A2C00A97A77 /* LaunchScreen.storyboard in Resources */,
+				52DA5FA12B889B6A00A97A77 /* GoogleService-Info.plist in Resources */,
 				52DA5F962B889A2C00A97A77 /* Assets.xcassets in Resources */,
-				52DA5F942B889A2B00A97A77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F53988018754F36BB45C954 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthyLife/Pods-HealthyLife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthyLife/Pods-HealthyLife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthyLife/Pods-HealthyLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF836B89D6B5FDC6715A6DF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthyLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52DA5F852B889A2B00A97A77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523423CB2B88B028001F8EE0 /* BaseView.swift in Sources */,
 				52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */,
 				52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */,
-				52DA5F8F2B889A2B00A97A77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		52DA5F922B889A2B00A97A77 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52DA5F932B889A2B00A97A77 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52DA5F972B889A2C00A97A77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,7 +281,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -218,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,7 +344,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,6 +365,7 @@
 		};
 		52DA5F9E2B889A2C00A97A77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69AC7B532FE0188F60439EFE /* Pods-HealthyLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,9 +376,9 @@
 				INFOPLIST_FILE = HealthyLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +394,7 @@
 		};
 		52DA5F9F2B889A2C00A97A77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4E39DF478908EA0ED21156 /* Pods-HealthyLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,9 +405,9 @@
 				INFOPLIST_FILE = HealthyLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
