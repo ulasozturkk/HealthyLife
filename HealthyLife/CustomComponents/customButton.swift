@@ -26,6 +26,8 @@ class customButton: UIButton {
     let symbolImage = UIImage(named: "backIcon.png")
     self.setImage(symbolImage, for: .normal)
     self.backgroundColor = backGroundColor
+    self.layer.borderWidth = 1.0
+    self.layer.borderColor = UIColor.lightGray.cgColor
   }
   
   func configureButton(){
@@ -33,7 +35,7 @@ class customButton: UIButton {
     layer.cornerRadius = 30
     backgroundColor = .purple
     tintColor = .white
-    titleLabel?.font = UIFont.customScaledFont(fontName: ConstantFonts.SemiBoldItalic)
+    titleLabel?.font = UIFont.customScaledFont(fontName: ConstantFonts.SemiBoldItalic,fontSize: 24)
     titleLabel?.adjustsFontForContentSizeCategory = true
   }
 }

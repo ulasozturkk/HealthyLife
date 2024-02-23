@@ -27,7 +27,7 @@ class customImageView: UIImageView {
     translatesAutoresizingMaskIntoConstraints = false
     layer.cornerRadius = bounds.size.width / 2
     clipsToBounds = false
-    contentMode = .scaleAspectFit
+    contentMode = .scaleAspectFill
     image = UIImage(named: "selectImage.jpeg")
   }
 }
