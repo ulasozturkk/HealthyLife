@@ -20,11 +20,15 @@
 		52397ED32B88BD8100DE18B5 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52397ED22B88BD8100DE18B5 /* customButton.swift */; };
 		52397ED52B88C59F00DE18B5 /* customLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52397ED42B88C59F00DE18B5 /* customLabel.swift */; };
 		52397ED72B88C64800DE18B5 /* customImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52397ED62B88C64800DE18B5 /* customImageView.swift */; };
+		52397EDA2B88DDEE00DE18B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52397ED92B88DDEE00DE18B5 /* GoogleService-Info.plist */; };
+		528513B32B8A30B200F7442F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B22B8A30B200F7442F /* SignUpView.swift */; };
+		528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B42B8A30C300F7442F /* SignUpVC.swift */; };
+		528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B62B8A311200F7442F /* ConstantComponents.swift */; };
+		528513B92B8A34AC00F7442F /* customStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B82B8A34AC00F7442F /* customStackView.swift */; };
 		52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */; };
 		52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F902B889A2B00A97A77 /* ViewController.swift */; };
 		52DA5F962B889A2C00A97A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F952B889A2C00A97A77 /* Assets.xcassets */; };
 		52DA5F992B889A2C00A97A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F972B889A2C00A97A77 /* LaunchScreen.storyboard */; };
-		52DA5FA12B889B6A00A97A77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5FA02B889B6A00A97A77 /* GoogleService-Info.plist */; };
 		A02BDC7C3E5909A74EE83774 /* Pods_HealthyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619E75416115637E82D5CDF8 /* Pods_HealthyLife.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,13 +48,17 @@
 		52397ED22B88BD8100DE18B5 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		52397ED42B88C59F00DE18B5 /* customLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabel.swift; sourceTree = "<group>"; };
 		52397ED62B88C64800DE18B5 /* customImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customImageView.swift; sourceTree = "<group>"; };
+		52397ED92B88DDEE00DE18B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		528513B22B8A30B200F7442F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		528513B42B8A30C300F7442F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		528513B62B8A311200F7442F /* ConstantComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantComponents.swift; sourceTree = "<group>"; };
+		528513B82B8A34AC00F7442F /* customStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customStackView.swift; sourceTree = "<group>"; };
 		52DA5F892B889A2B00A97A77 /* HealthyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DA5F902B889A2B00A97A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52DA5F952B889A2C00A97A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DA5F982B889A2C00A97A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DA5F9A2B889A2C00A97A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52DA5FA02B889B6A00A97A77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		619E75416115637E82D5CDF8 /* Pods_HealthyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AC7B532FE0188F60439EFE /* Pods-HealthyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLife.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLife/Pods-HealthyLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +112,8 @@
 		52397EBB2B88B4D400DE18B5 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				528513B22B8A30B200F7442F /* SignUpView.swift */,
+				528513B42B8A30C300F7442F /* SignUpVC.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -115,6 +125,7 @@
 				52397ED22B88BD8100DE18B5 /* customButton.swift */,
 				52397ED42B88C59F00DE18B5 /* customLabel.swift */,
 				52397ED62B88C64800DE18B5 /* customImageView.swift */,
+				528513B82B8A34AC00F7442F /* customStackView.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				52397EC42B88BA8E00DE18B5 /* Fonts */,
+				528513B62B8A311200F7442F /* ConstantComponents.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -178,6 +190,7 @@
 				52DA5F952B889A2C00A97A77 /* Assets.xcassets */,
 				52DA5F972B889A2C00A97A77 /* LaunchScreen.storyboard */,
 				52DA5F9A2B889A2C00A97A77 /* Info.plist */,
+				52397ED92B88DDEE00DE18B5 /* GoogleService-Info.plist */,
 			);
 			path = HealthyLife;
 			sourceTree = "<group>";
@@ -185,7 +198,6 @@
 		8EF2C4C0D9A1B98C84127F11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				52DA5FA02B889B6A00A97A77 /* GoogleService-Info.plist */,
 				523423C72B88A9C5001F8EE0 /* Pods_HealthyLife.framework */,
 				619E75416115637E82D5CDF8 /* Pods_HealthyLife.framework */,
 			);
@@ -264,10 +276,10 @@
 				52397EC62B88BB1600DE18B5 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				52DA5F992B889A2C00A97A77 /* LaunchScreen.storyboard in Resources */,
 				52397ECC2B88BB6200DE18B5 /* OpenSans-Light.ttf in Resources */,
-				52DA5FA12B889B6A00A97A77 /* GoogleService-Info.plist in Resources */,
 				52397ECA2B88BB5800DE18B5 /* OpenSans-Italic.ttf in Resources */,
 				52DA5F962B889A2C00A97A77 /* Assets.xcassets in Resources */,
 				52397EC82B88BB4100DE18B5 /* OpenSans-BoldItalic.ttf in Resources */,
+				52397EDA2B88DDEE00DE18B5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,13 +334,17 @@
 			files = (
 				523423CB2B88B028001F8EE0 /* BaseView.swift in Sources */,
 				52397ECE2B88BBE400DE18B5 /* ConstantFonts.swift in Sources */,
+				528513B92B8A34AC00F7442F /* customStackView.swift in Sources */,
 				52397ED72B88C64800DE18B5 /* customImageView.swift in Sources */,
+				528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */,
 				52397ED12B88BC2200DE18B5 /* UIFontExtension.swift in Sources */,
+				528513B32B8A30B200F7442F /* SignUpView.swift in Sources */,
 				52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */,
 				52397EC22B88B9A400DE18B5 /* customTextField.swift in Sources */,
 				52397ED52B88C59F00DE18B5 /* customLabel.swift in Sources */,
 				52397EBD2B88B4E700DE18B5 /* SignInView.swift in Sources */,
 				52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */,
+				528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */,
 				52397EBF2B88B4F100DE18B5 /* SignInVC.swift in Sources */,
 				52397ED32B88BD8100DE18B5 /* customButton.swift in Sources */,
 			);
