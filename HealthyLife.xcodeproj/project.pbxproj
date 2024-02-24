@@ -25,6 +25,8 @@
 		528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B42B8A30C300F7442F /* SignUpVC.swift */; };
 		528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B62B8A311200F7442F /* ConstantComponents.swift */; };
 		528513B92B8A34AC00F7442F /* customStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B82B8A34AC00F7442F /* customStackView.swift */; };
+		528513BC2B8A513800F7442F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513BB2B8A513800F7442F /* SessionManager.swift */; };
+		528513BF2B8A520500F7442F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513BE2B8A520500F7442F /* User.swift */; };
 		52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */; };
 		52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F902B889A2B00A97A77 /* ViewController.swift */; };
 		52DA5F962B889A2C00A97A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F952B889A2C00A97A77 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		528513B42B8A30C300F7442F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		528513B62B8A311200F7442F /* ConstantComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantComponents.swift; sourceTree = "<group>"; };
 		528513B82B8A34AC00F7442F /* customStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customStackView.swift; sourceTree = "<group>"; };
+		528513BB2B8A513800F7442F /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		528513BE2B8A520500F7442F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		52DA5F892B889A2B00A97A77 /* HealthyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DA5F902B889A2B00A97A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +163,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		528513BA2B8A512600F7442F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				528513BB2B8A513800F7442F /* SessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		528513BD2B8A51F900F7442F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				528513BE2B8A520500F7442F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		52DA5F802B889A2B00A97A77 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +200,8 @@
 		52DA5F8B2B889A2B00A97A77 /* HealthyLife */ = {
 			isa = PBXGroup;
 			children = (
+				528513BD2B8A51F900F7442F /* Model */,
+				528513BA2B8A512600F7442F /* Managers */,
 				52397ECF2B88BC1700DE18B5 /* Extensions */,
 				52397EC32B88BA8800DE18B5 /* Constants */,
 				52397EC02B88B70600DE18B5 /* CustomComponents */,
@@ -339,6 +361,7 @@
 				528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */,
 				52397ED12B88BC2200DE18B5 /* UIFontExtension.swift in Sources */,
 				528513B32B8A30B200F7442F /* SignUpView.swift in Sources */,
+				528513BF2B8A520500F7442F /* User.swift in Sources */,
 				52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */,
 				52397EC22B88B9A400DE18B5 /* customTextField.swift in Sources */,
 				52397ED52B88C59F00DE18B5 /* customLabel.swift in Sources */,
@@ -346,6 +369,7 @@
 				52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */,
 				528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */,
 				52397EBF2B88B4F100DE18B5 /* SignInVC.swift in Sources */,
+				528513BC2B8A513800F7442F /* SessionManager.swift in Sources */,
 				52397ED32B88BD8100DE18B5 /* customButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
