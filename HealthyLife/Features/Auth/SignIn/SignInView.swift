@@ -3,16 +3,16 @@
 import UIKit
 
 class SignInView: BaseView {
-  var backButton = customButton(backGroundColor: .white)
-  
-  var iconImageView = customImageView(image: UIImage(named: "appIcon500.png")!)
+
+  var backButton = ConstantComponents.backButton
+  var iconImageView = ConstantComponents.iconImageView
   var LogInLabel = customLabel(text: "LogIn", fontName: ConstantFonts.BoldItalic, textColor: .black,fontSize: ConstantFontSize.title)
   var descriptionLabel = customLabel(text: "LogIn to continue using the app", fontName: ConstantFonts.light, textColor: .lightGray,fontSize: ConstantFontSize.description)
   var emailLabel = customLabel(text: "E-mail", fontName: ConstantFonts.SemiBoldItalic,fontSize: ConstantFontSize.subtitle)
   var emailTextField = customTextField(placeHolder: "Enter Your E-mail", isSecured: false)
   var passwordLabel = customLabel(text: "Password", fontName: ConstantFonts.SemiBoldItalic,fontSize: ConstantFontSize.subtitle)
   var passwordTextField = customTextField(placeHolder: "Enter Your Password", isSecured: true)
-  var forgotPasswordLabel = customLabel(text: "Forgot Password?", fontName: ConstantFonts.italic,fontSize: ConstantFontSize.subtitle)
+  var forgotPasswordLabel = customLabel(text: "Forgot Password?", fontName: ConstantFonts.italic,textColor: .blue, fontSize: ConstantFontSize.subtitle)
   var loginButton = customButton(title: "LogIn")
   let sH = UIScreen.main.bounds.height
   let sW = UIScreen.main.bounds.width

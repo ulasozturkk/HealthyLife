@@ -21,6 +21,10 @@
 		52397ED52B88C59F00DE18B5 /* customLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52397ED42B88C59F00DE18B5 /* customLabel.swift */; };
 		52397ED72B88C64800DE18B5 /* customImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52397ED62B88C64800DE18B5 /* customImageView.swift */; };
 		52397EDA2B88DDEE00DE18B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52397ED92B88DDEE00DE18B5 /* GoogleService-Info.plist */; };
+		528513B32B8A30B200F7442F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B22B8A30B200F7442F /* SignUpView.swift */; };
+		528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B42B8A30C300F7442F /* SignUpVC.swift */; };
+		528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B62B8A311200F7442F /* ConstantComponents.swift */; };
+		528513B92B8A34AC00F7442F /* customStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B82B8A34AC00F7442F /* customStackView.swift */; };
 		52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */; };
 		52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F902B889A2B00A97A77 /* ViewController.swift */; };
 		52DA5F962B889A2C00A97A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F952B889A2C00A97A77 /* Assets.xcassets */; };
@@ -45,6 +49,10 @@
 		52397ED42B88C59F00DE18B5 /* customLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabel.swift; sourceTree = "<group>"; };
 		52397ED62B88C64800DE18B5 /* customImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customImageView.swift; sourceTree = "<group>"; };
 		52397ED92B88DDEE00DE18B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		528513B22B8A30B200F7442F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		528513B42B8A30C300F7442F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		528513B62B8A311200F7442F /* ConstantComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantComponents.swift; sourceTree = "<group>"; };
+		528513B82B8A34AC00F7442F /* customStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customStackView.swift; sourceTree = "<group>"; };
 		52DA5F892B889A2B00A97A77 /* HealthyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DA5F902B889A2B00A97A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +112,8 @@
 		52397EBB2B88B4D400DE18B5 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				528513B22B8A30B200F7442F /* SignUpView.swift */,
+				528513B42B8A30C300F7442F /* SignUpVC.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -115,6 +125,7 @@
 				52397ED22B88BD8100DE18B5 /* customButton.swift */,
 				52397ED42B88C59F00DE18B5 /* customLabel.swift */,
 				52397ED62B88C64800DE18B5 /* customImageView.swift */,
+				528513B82B8A34AC00F7442F /* customStackView.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				52397EC42B88BA8E00DE18B5 /* Fonts */,
+				528513B62B8A311200F7442F /* ConstantComponents.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -322,13 +334,17 @@
 			files = (
 				523423CB2B88B028001F8EE0 /* BaseView.swift in Sources */,
 				52397ECE2B88BBE400DE18B5 /* ConstantFonts.swift in Sources */,
+				528513B92B8A34AC00F7442F /* customStackView.swift in Sources */,
 				52397ED72B88C64800DE18B5 /* customImageView.swift in Sources */,
+				528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */,
 				52397ED12B88BC2200DE18B5 /* UIFontExtension.swift in Sources */,
+				528513B32B8A30B200F7442F /* SignUpView.swift in Sources */,
 				52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */,
 				52397EC22B88B9A400DE18B5 /* customTextField.swift in Sources */,
 				52397ED52B88C59F00DE18B5 /* customLabel.swift in Sources */,
 				52397EBD2B88B4E700DE18B5 /* SignInView.swift in Sources */,
 				52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */,
+				528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */,
 				52397EBF2B88B4F100DE18B5 /* SignInVC.swift in Sources */,
 				52397ED32B88BD8100DE18B5 /* customButton.swift in Sources */,
 			);

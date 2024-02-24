@@ -15,7 +15,7 @@ class customLabel: UILabel {
   convenience init(text:String,fontName:String,textColor: UIColor? = nil,fontSize: CGFloat){
     self.init(frame: .zero)
     self.text = text
-    self.font = UIFont.customScaledFont(fontName: fontName,fontSize: fontSize)
+    self.font = UIFont.customScaledFont(fontName: fontName)
     self.textColor = textColor ?? .black
     
   }

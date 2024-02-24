@@ -35,7 +35,7 @@ class customButton: UIButton {
     layer.cornerRadius = 30
     backgroundColor = .purple
     tintColor = .white
-    titleLabel?.font = UIFont.customScaledFont(fontName: ConstantFonts.SemiBoldItalic,fontSize: 24)
+    titleLabel?.font = UIFont.customScaledFont(fontName: ConstantFonts.SemiBoldItalic)
     titleLabel?.adjustsFontForContentSizeCategory = true
   }
 }
