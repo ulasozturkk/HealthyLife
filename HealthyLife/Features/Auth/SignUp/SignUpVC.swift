@@ -9,7 +9,7 @@ class SignUpVC: UIViewController {
     navigationItem.hidesBackButton = true
     navigationItem.leftBarButtonItem = UIBarButtonItem(customView: sView!.backButton)
     sView?.backButton.addTarget(self, action: #selector(goSignIn), for: .touchUpInside)
-    sView?.signUpButton.addTarget(self, action: #selector(signUp), for: .touchUpInside)
+    sView?.signUpButton.addTarget(self, action: #selector(checkTextFields), for: .touchUpInside)
     view = sView
   }
 
@@ -17,10 +17,9 @@ class SignUpVC: UIViewController {
     navigationController?.popToRootViewController(animated: true)
   }
 
-  @objc func signUp() {
-    checkTextFields()
-    guard let email = sView?.emailTextField.text, let password = sView?.passwordTextField.text else { return }
-    SessionManager.shared.CreateAccount(email: email, password: password) { error in
+   func signUp() {
+    guard let email = sView?.emailTextField.text, let password = sView?.passwordTextField.text, let username = sView?.usernameTextField.text else { return }
+    SessionManager.shared.CreateAccount(email: email, password: password, username: username) { error in
       guard let error = error else {
         let alert = self.createAlert(title: "Success", message: "your account created succesfully")
         self.present(alert, animated: true)
@@ -31,9 +30,10 @@ class SignUpVC: UIViewController {
     }
   }
 
-  private func checkTextFields() {
+  @objc func checkTextFields() {
     if sView?.emailTextField.text != "" && sView?.passwordTextField.text != "" && sView?.usernameTextField.text != "" && sView?.confirmTextField.text != "" {
       if sView?.passwordTextField.text == sView?.confirmTextField.text {
+        signUp()
       } else {
         let alert = createAlert(title: "Error", message: "Passwords must be same!")
         present(alert, animated: true)

@@ -2,7 +2,6 @@ import Foundation
 import MapKit
 
 struct User {
-  var email:String
   var username: String
   var password: String
   var favPlaces : [FavPlaces]?
@@ -10,7 +9,10 @@ struct User {
 }
 
 struct FavPlaces {
-  var coordinate: CLLocationCoordinate2D
+  
+  var placeName: String
+  var latitude: CLLocationDegrees
+  var longitude : CLLocationDegrees
   var photos: [Data]?
   var people: [People]?
 }
