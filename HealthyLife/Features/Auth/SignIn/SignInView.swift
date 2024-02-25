@@ -5,15 +5,16 @@ import UIKit
 class SignInView: BaseView {
 
   var backButton = ConstantComponents.backButton
-  var iconImageView = ConstantComponents.iconImageView
-  var LogInLabel = customLabel(text: "LogIn", fontName: ConstantFonts.BoldItalic, textColor: .black,fontSize: ConstantFontSize.title)
-  var descriptionLabel = customLabel(text: "LogIn to continue using the app", fontName: ConstantFonts.light, textColor: .lightGray,fontSize: ConstantFontSize.description)
-  var emailLabel = customLabel(text: "E-mail", fontName: ConstantFonts.SemiBoldItalic,fontSize: ConstantFontSize.subtitle)
+  var iconImageView = customImageView(image: UIImage(named: "appIcon500.png")!)
+  var LogInLabel = customLabel(text: "LogIn", fontName: ConstantFonts.BoldItalic, textColor: .black)
+  var descriptionLabel = customLabel(text: "LogIn to continue using the app", fontName: ConstantFonts.light, textColor: .lightGray)
+  var emailLabel = customLabel(text: "E-mail", fontName: ConstantFonts.SemiBoldItalic)
   var emailTextField = customTextField(placeHolder: "Enter Your E-mail", isSecured: false)
-  var passwordLabel = customLabel(text: "Password", fontName: ConstantFonts.SemiBoldItalic,fontSize: ConstantFontSize.subtitle)
+  var passwordLabel = customLabel(text: "Password", fontName: ConstantFonts.SemiBoldItalic)
   var passwordTextField = customTextField(placeHolder: "Enter Your Password", isSecured: true)
-  var forgotPasswordLabel = customLabel(text: "Forgot Password?", fontName: ConstantFonts.italic,textColor: .blue, fontSize: ConstantFontSize.subtitle)
+  var forgotPasswordLabel = customLabel(text: "Forgot Password?", fontName: ConstantFonts.italic,textColor: .blue)
   var loginButton = customButton(title: "LogIn")
+  var createAccountLabel = customLabel(text: "Dont have account? Create one", fontName: ConstantFonts.SemiBoldItalic,textColor: .lightGray)
   let sH = UIScreen.main.bounds.height
   let sW = UIScreen.main.bounds.width
   
@@ -28,6 +29,7 @@ class SignInView: BaseView {
     buildPasswordTextfield()
     buildForgotPasswordLabel()
     buildLogInButton()
+    buildCreateAccountLabel()
   }
   
   private func buildIconImage(){
@@ -83,5 +85,11 @@ class SignInView: BaseView {
     loginButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
     loginButton.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.08).isActive = true
     loginButton.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.9).isActive = true
+  }
+  private func buildCreateAccountLabel(){
+    addSubview(createAccountLabel)
+    createAccountLabel.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: sH * 0.02).isActive = true
+    createAccountLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+    
   }
 }

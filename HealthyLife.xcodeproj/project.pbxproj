@@ -25,10 +25,19 @@
 		528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B42B8A30C300F7442F /* SignUpVC.swift */; };
 		528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B62B8A311200F7442F /* ConstantComponents.swift */; };
 		528513B92B8A34AC00F7442F /* customStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B82B8A34AC00F7442F /* customStackView.swift */; };
+		528513BC2B8A513800F7442F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513BB2B8A513800F7442F /* SessionManager.swift */; };
+		528513BF2B8A520500F7442F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513BE2B8A520500F7442F /* User.swift */; };
+		528513C42B8A683000F7442F /* MapHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513C32B8A683000F7442F /* MapHomeView.swift */; };
+		528513C62B8A683C00F7442F /* MapHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513C52B8A683C00F7442F /* MapHomeVC.swift */; };
 		52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */; };
 		52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F902B889A2B00A97A77 /* ViewController.swift */; };
 		52DA5F962B889A2C00A97A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F952B889A2C00A97A77 /* Assets.xcassets */; };
 		52DA5F992B889A2C00A97A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F972B889A2C00A97A77 /* LaunchScreen.storyboard */; };
+		52E851892B8A87B200DE97F8 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E851882B8A87B200DE97F8 /* tabBar.swift */; };
+		52E8518B2B8A8A1E00DE97F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8518A2B8A8A1E00DE97F8 /* ProfileView.swift */; };
+		52E8518D2B8A8A2900DE97F8 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8518C2B8A8A2900DE97F8 /* ProfileVC.swift */; };
+		52E8518F2B8A8A3500DE97F8 /* StatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E8518E2B8A8A3500DE97F8 /* StatsVC.swift */; };
+		52E851912B8A8A4100DE97F8 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E851902B8A8A4100DE97F8 /* StatsView.swift */; };
 		A02BDC7C3E5909A74EE83774 /* Pods_HealthyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619E75416115637E82D5CDF8 /* Pods_HealthyLife.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,12 +62,21 @@
 		528513B42B8A30C300F7442F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		528513B62B8A311200F7442F /* ConstantComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantComponents.swift; sourceTree = "<group>"; };
 		528513B82B8A34AC00F7442F /* customStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customStackView.swift; sourceTree = "<group>"; };
+		528513BB2B8A513800F7442F /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		528513BE2B8A520500F7442F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		528513C32B8A683000F7442F /* MapHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHomeView.swift; sourceTree = "<group>"; };
+		528513C52B8A683C00F7442F /* MapHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHomeVC.swift; sourceTree = "<group>"; };
 		52DA5F892B889A2B00A97A77 /* HealthyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DA5F902B889A2B00A97A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52DA5F952B889A2C00A97A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DA5F982B889A2C00A97A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DA5F9A2B889A2C00A97A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E851882B8A87B200DE97F8 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		52E8518A2B8A8A1E00DE97F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		52E8518C2B8A8A2900DE97F8 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		52E8518E2B8A8A3500DE97F8 /* StatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsVC.swift; sourceTree = "<group>"; };
+		52E851902B8A8A4100DE97F8 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		619E75416115637E82D5CDF8 /* Pods_HealthyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AC7B532FE0188F60439EFE /* Pods-HealthyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyLife.debug.xcconfig"; path = "Target Support Files/Pods-HealthyLife/Pods-HealthyLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +96,11 @@
 		523423C82B88B013001F8EE0 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				528513C22B8A681D00F7442F /* Map */,
+				528513C12B8A681200F7442F /* Profile */,
+				528513C02B8A680D00F7442F /* Stats */,
 				52397EB92B88B4C700DE18B5 /* Auth */,
+				52E851882B8A87B200DE97F8 /* tabBar.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -159,6 +181,49 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		528513BA2B8A512600F7442F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				528513BB2B8A513800F7442F /* SessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		528513BD2B8A51F900F7442F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				528513BE2B8A520500F7442F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		528513C02B8A680D00F7442F /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				52E8518E2B8A8A3500DE97F8 /* StatsVC.swift */,
+				52E851902B8A8A4100DE97F8 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		528513C12B8A681200F7442F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				52E8518A2B8A8A1E00DE97F8 /* ProfileView.swift */,
+				52E8518C2B8A8A2900DE97F8 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		528513C22B8A681D00F7442F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				528513C32B8A683000F7442F /* MapHomeView.swift */,
+				528513C52B8A683C00F7442F /* MapHomeVC.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		52DA5F802B889A2B00A97A77 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +245,8 @@
 		52DA5F8B2B889A2B00A97A77 /* HealthyLife */ = {
 			isa = PBXGroup;
 			children = (
+				528513BD2B8A51F900F7442F /* Model */,
+				528513BA2B8A512600F7442F /* Managers */,
 				52397ECF2B88BC1700DE18B5 /* Extensions */,
 				52397EC32B88BA8800DE18B5 /* Constants */,
 				52397EC02B88B70600DE18B5 /* CustomComponents */,
@@ -332,13 +399,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528513C42B8A683000F7442F /* MapHomeView.swift in Sources */,
 				523423CB2B88B028001F8EE0 /* BaseView.swift in Sources */,
 				52397ECE2B88BBE400DE18B5 /* ConstantFonts.swift in Sources */,
 				528513B92B8A34AC00F7442F /* customStackView.swift in Sources */,
+				528513C62B8A683C00F7442F /* MapHomeVC.swift in Sources */,
 				52397ED72B88C64800DE18B5 /* customImageView.swift in Sources */,
 				528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */,
 				52397ED12B88BC2200DE18B5 /* UIFontExtension.swift in Sources */,
 				528513B32B8A30B200F7442F /* SignUpView.swift in Sources */,
+				528513BF2B8A520500F7442F /* User.swift in Sources */,
 				52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */,
 				52397EC22B88B9A400DE18B5 /* customTextField.swift in Sources */,
 				52397ED52B88C59F00DE18B5 /* customLabel.swift in Sources */,
@@ -346,7 +416,13 @@
 				52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */,
 				528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */,
 				52397EBF2B88B4F100DE18B5 /* SignInVC.swift in Sources */,
+				52E8518F2B8A8A3500DE97F8 /* StatsVC.swift in Sources */,
+				528513BC2B8A513800F7442F /* SessionManager.swift in Sources */,
 				52397ED32B88BD8100DE18B5 /* customButton.swift in Sources */,
+				52E851912B8A8A4100DE97F8 /* StatsView.swift in Sources */,
+				52E8518B2B8A8A1E00DE97F8 /* ProfileView.swift in Sources */,
+				52E8518D2B8A8A2900DE97F8 /* ProfileVC.swift in Sources */,
+				52E851892B8A87B200DE97F8 /* tabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +570,7 @@
 				DEVELOPMENT_TEAM = 2758CUH3C2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthyLife/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location usage";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -523,6 +600,7 @@
 				DEVELOPMENT_TEAM = 2758CUH3C2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthyLife/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location usage";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

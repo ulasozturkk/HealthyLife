@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     window = UIWindow(frame: UIScreen.main.bounds)
     let nav = UINavigationController(rootViewController: SignInVC())
+    
+    
     window?.rootViewController = nav
     window?.makeKeyAndVisible()
     return true
