@@ -8,12 +8,13 @@ class SessionManager {
   private init(){}
   var currentUser: User?
   
-  func CreateAccount(email: String,password:String,completion:@escaping (Error?)-> () ){
+  func CreateAccount(email: String,password:String,username:String,completion:@escaping (Error?)-> () ){
     let auth = Auth.auth()
     auth.createUser(withEmail: email, password: password) { res, error in
       if let error = error {
         completion(error)
       }else {
+        UserManager.shared.addUser(username: username, password: password, favPlaces: [], stats: [])
         completion(nil)
       }
     }

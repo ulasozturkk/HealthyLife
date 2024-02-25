@@ -9,6 +9,7 @@ class MapHomeVC: UIViewController {
   override func loadView() {
     sView = MapHomeView()
     view = sView
+    checkFavPlaces()
     sView?.mapView.delegate = self
     sView?.mapView.showsUserLocation = true
     sView?.mapView.isUserInteractionEnabled = true
@@ -19,17 +20,53 @@ class MapHomeVC: UIViewController {
     sView?.mapView.addGestureRecognizer(pinLocationRecognizer)
   }
 
+  func checkFavPlaces() -> [MKPointAnnotation] {
+    var pins: [MKPointAnnotation] = []
+    LocationManager.shared.getPlaces { places in
+      DispatchQueue.main.async {
+        for place in places {
+          let pin = MKPointAnnotation()
+          pin.title = place.placeName
+          pin.coordinate = CLLocationCoordinate2D(latitude: place.latitude, longitude: place.longitude)
+          pins.append(pin)
+        }
+        let annotations = self.sView?.mapView.annotations
+        self.sView?.mapView.removeAnnotations(annotations!)
+        self.sView?.mapView.addAnnotations(pins)
+      }
+    }
+    return pins
+  }
+
   @objc func addPin(gestureRec: UILongPressGestureRecognizer) {
     if gestureRec.state != UIGestureRecognizer.State.ended {
       let touchLocation = gestureRec.location(in: sView?.mapView)
       let touchCoordinate = sView?.mapView.convert(touchLocation, toCoordinateFrom: sView?.mapView)
 
       let pin = MKPointAnnotation()
-      if let touchCoordinate = touchCoordinate {
-        pin.coordinate = touchCoordinate
-        pin.title = "deneme"
-        sView?.mapView.addAnnotation(pin)
+      let alertController = UIAlertController(title: "Enter Pin Title", message: nil, preferredStyle: .alert)
+
+      alertController.addTextField { textField in
+        textField.placeholder = "Pin Title"
       }
+      let action = UIAlertAction(title: "OK", style: .cancel) { _ in
+        if let title = alertController.textFields?.first?.text {
+          if let touchCoordinate = touchCoordinate {
+            pin.coordinate = touchCoordinate
+            pin.title = alertController.textFields?.first?.text
+            self.sView?.mapView.addAnnotation(pin)
+            LocationManager.shared.addPlace(data: [
+              "placeName": pin.title,
+              "latitude": touchCoordinate.latitude,
+              "longitude": touchCoordinate.longitude,
+              "photos": [],
+              "people": []
+            ])
+          }
+        }
+      }
+      alertController.addAction(action)
+      present(alertController, animated: true)
     }
   }
 }
@@ -37,25 +74,13 @@ class MapHomeVC: UIViewController {
 extension MapHomeVC: MKMapViewDelegate {
   func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
     guard let pin = view.annotation as? MKPointAnnotation else { return }
-
-    let customizePin = UIAlertController(title: "Customize", message: "Add Title to this pin", preferredStyle: .alert)
-    customizePin.addTextField { textfield in
-      textfield.placeholder = "enter pin title:"
-    }
-    let cancelButton = UIAlertAction(title: "Cancel", style: .destructive)
-    let okButton = UIAlertAction(title: "OK", style: .cancel) { _ in
-      if let textField = customizePin.textFields?.first, let newTitle = textField.text {
-        pin.title = newTitle
-        view.annotation = pin
-      }
-    }
-    customizePin.addAction(okButton)
-    customizePin.addAction(cancelButton)
-
-    present(customizePin, animated: true, completion: nil)
-
-    sView!.mapView.deselectAnnotation(pin, animated: true)
+    let data = ["placeName": "bu bir denemdir"] as [String: Any]
+    LocationManager.shared.updatePlace(data: data, latitude: pin.coordinate.latitude)
   }
+  
+  
+  
+  
 }
 
 extension MapHomeVC: CLLocationManagerDelegate {
