@@ -14,31 +14,33 @@ class SignInVC: UIViewController {
     let createAccount = UITapGestureRecognizer(target: self, action: #selector(goSignUp))
     sView?.createAccountLabel.addGestureRecognizer(createAccount)
   }
-  
+
   @objc func hideKeyboard() {
     view.endEditing(true)
   }
 
   @objc func logIn() {
     guard let email = sView?.emailTextField.text, !email.isEmpty,
-          let password = sView?.passwordTextField.text, !password.isEmpty else {
+          let password = sView?.passwordTextField.text, !password.isEmpty
+    else {
       let alert = createAlert(title: "Error", message: "E-mail and password cannot be empty")
-      self.present(alert,animated: true)
+      present(alert, animated: true)
       return
     }
     SessionManager.shared.SignIn(email: email, password: password) { error in
       if let error = error {
         let alert = self.createAlert(title: "Error", message: error.localizedDescription)
-        self.present(alert,animated: true)
+        self.present(alert, animated: true)
       }
     }
+    navigationController?.pushViewController(tabBar(), animated: true)
   }
-  @objc func goSignUp(){
+
+  @objc func goSignUp() {
     navigationController?.pushViewController(SignUpVC(), animated: true)
   }
-  
-  
-  func createAlert(title:String,message:String) -> UIAlertController{
+
+  func createAlert(title: String, message: String) -> UIAlertController {
     let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
     let ok = UIAlertAction(title: "OK", style: .default)
     alert.addAction(ok)

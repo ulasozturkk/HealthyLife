@@ -24,8 +24,10 @@ class SessionManager {
     auth.signIn(withEmail: email, password: password) { res, error in
       if let error = error {
         completion(error)
+        
       }else {
         completion(nil)
+        
       }
     }
   }

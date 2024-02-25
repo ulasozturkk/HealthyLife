@@ -10,7 +10,7 @@ struct User {
 }
 
 struct FavPlaces {
-  var location: CLLocationCoordinate2D
+  var coordinate: CLLocationCoordinate2D
   var photos: [Data]?
   var people: [People]?
 }

@@ -18,6 +18,11 @@ class customButton: UIButton {
     setTitle(title, for: .normal)
     
   }
+  convenience init(angledTitle: String) {
+    self.init(frame: .zero)
+    setTitle(angledTitle, for: .normal)
+    self.layer.cornerRadius = 12
+  }
   
   convenience init(backGroundColor: UIColor){
     self.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
