@@ -9,6 +9,7 @@ class MapHomeVC: UIViewController {
   override func loadView() {
     sView = MapHomeView()
     view = sView
+    checkFavPlaces()
     sView?.mapView.delegate = self
     sView?.mapView.showsUserLocation = true
     sView?.mapView.isUserInteractionEnabled = true
@@ -17,6 +18,24 @@ class MapHomeVC: UIViewController {
     locationManager.startUpdatingLocation()
     let pinLocationRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(addPin))
     sView?.mapView.addGestureRecognizer(pinLocationRecognizer)
+  }
+
+  func checkFavPlaces() -> [MKPointAnnotation] {
+    var pins: [MKPointAnnotation] = []
+    LocationManager.shared.getPlaces { places in
+      DispatchQueue.main.async {
+        for place in places {
+          let pin = MKPointAnnotation()
+          pin.title = place.placeName
+          pin.coordinate = CLLocationCoordinate2D(latitude: place.latitude, longitude: place.longitude)
+          pins.append(pin)
+        }
+        let annotations = self.sView?.mapView.annotations
+        self.sView?.mapView.removeAnnotations(annotations!)
+        self.sView?.mapView.addAnnotations(pins)
+      }
+    }
+    return pins
   }
 
   @objc func addPin(gestureRec: UILongPressGestureRecognizer) {
@@ -30,7 +49,7 @@ class MapHomeVC: UIViewController {
       alertController.addTextField { textField in
         textField.placeholder = "Pin Title"
       }
-      let action = UIAlertAction(title: "OK", style: .cancel) { action in
+      let action = UIAlertAction(title: "OK", style: .cancel) { _ in
         if let title = alertController.textFields?.first?.text {
           if let touchCoordinate = touchCoordinate {
             pin.coordinate = touchCoordinate
@@ -47,9 +66,7 @@ class MapHomeVC: UIViewController {
         }
       }
       alertController.addAction(action)
-      self.present(alertController,animated: true)
-
-      
+      present(alertController, animated: true)
     }
   }
 }
@@ -57,10 +74,13 @@ class MapHomeVC: UIViewController {
 extension MapHomeVC: MKMapViewDelegate {
   func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
     guard let pin = view.annotation as? MKPointAnnotation else { return }
-    let data = ["placeName":"bu bir denemdir"] as [String : Any]
+    let data = ["placeName": "bu bir denemdir"] as [String: Any]
     LocationManager.shared.updatePlace(data: data, latitude: pin.coordinate.latitude)
-    
   }
+  
+  
+  
+  
 }
 
 extension MapHomeVC: CLLocationManagerDelegate {

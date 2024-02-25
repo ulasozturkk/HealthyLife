@@ -31,6 +31,8 @@
 		528513C62B8A683C00F7442F /* MapHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513C52B8A683C00F7442F /* MapHomeVC.swift */; };
 		52AC81C82B8B4E3C001A8F1D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC81C72B8B4E3C001A8F1D /* UserManager.swift */; };
 		52AC81CA2B8B56F2001A8F1D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC81C92B8B56F2001A8F1D /* LocationManager.swift */; };
+		52D4CD852B8BD3AD00405F85 /* FavPlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4CD842B8BD3AD00405F85 /* FavPlacesView.swift */; };
+		52D4CD872B8BD3B700405F85 /* FavPlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4CD862B8BD3B700405F85 /* FavPlacesVC.swift */; };
 		52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */; };
 		52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5F902B889A2B00A97A77 /* ViewController.swift */; };
 		52DA5F962B889A2C00A97A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5F952B889A2C00A97A77 /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		528513C52B8A683C00F7442F /* MapHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHomeVC.swift; sourceTree = "<group>"; };
 		52AC81C72B8B4E3C001A8F1D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		52AC81C92B8B56F2001A8F1D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		52D4CD842B8BD3AD00405F85 /* FavPlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavPlacesView.swift; sourceTree = "<group>"; };
+		52D4CD862B8BD3B700405F85 /* FavPlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavPlacesVC.swift; sourceTree = "<group>"; };
 		52DA5F892B889A2B00A97A77 /* HealthyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DA5F8C2B889A2B00A97A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DA5F902B889A2B00A97A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -224,10 +228,20 @@
 		528513C22B8A681D00F7442F /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				52D4CD832B8BD39D00405F85 /* FavPlaces */,
 				528513C32B8A683000F7442F /* MapHomeView.swift */,
 				528513C52B8A683C00F7442F /* MapHomeVC.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		52D4CD832B8BD39D00405F85 /* FavPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				52D4CD842B8BD3AD00405F85 /* FavPlacesView.swift */,
+				52D4CD862B8BD3B700405F85 /* FavPlacesVC.swift */,
+			);
+			path = FavPlaces;
 			sourceTree = "<group>";
 		};
 		52DA5F802B889A2B00A97A77 = {
@@ -415,11 +429,13 @@
 				52397ED12B88BC2200DE18B5 /* UIFontExtension.swift in Sources */,
 				528513B32B8A30B200F7442F /* SignUpView.swift in Sources */,
 				528513BF2B8A520500F7442F /* User.swift in Sources */,
+				52D4CD872B8BD3B700405F85 /* FavPlacesVC.swift in Sources */,
 				52DA5F912B889A2B00A97A77 /* ViewController.swift in Sources */,
 				52397EC22B88B9A400DE18B5 /* customTextField.swift in Sources */,
 				52AC81CA2B8B56F2001A8F1D /* LocationManager.swift in Sources */,
 				52397ED52B88C59F00DE18B5 /* customLabel.swift in Sources */,
 				52397EBD2B88B4E700DE18B5 /* SignInView.swift in Sources */,
+				52D4CD852B8BD3AD00405F85 /* FavPlacesView.swift in Sources */,
 				52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */,
 				528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */,
 				52AC81C82B8B4E3C001A8F1D /* UserManager.swift in Sources */,
