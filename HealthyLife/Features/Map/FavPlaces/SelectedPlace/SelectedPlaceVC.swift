@@ -33,7 +33,17 @@ class SelectedPlaceVC: UIViewController, DataTransferDelegate {
   }
 
   func sendData(data: FavPlaces) {
-    selectedPlace = data
+    let veri = data
+    LocationManager.shared.getContacsOnDB(latitude: veri.latitude) { list in
+      DispatchQueue.main.async {
+        let place: FavPlaces?
+        place = list.first
+        if let place = place {
+          self.selectedContacs = place.people!
+          self.sView?.PlacesCollectionView.reloadData()
+        }
+      }
+    }
   }
 }
 
@@ -82,16 +92,16 @@ extension SelectedPlaceVC: UICollectionViewDragDelegate {
   func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
     let contactName = String(allContacs[indexPath.item].name)
     let contactNumber = String(allContacs[indexPath.item].phoneNumber)
-    
+
     let nameItemProvider = NSItemProvider(object: contactName as NSString)
     let numberProvider = NSItemProvider(object: contactNumber as NSString)
-    
+
     let nameDragItem = UIDragItem(itemProvider: nameItemProvider)
     let numberDragItem = UIDragItem(itemProvider: numberProvider)
-    
+
     nameDragItem.localObject = contactName
     numberDragItem.localObject = contactNumber
-    
+
     return [nameDragItem, numberDragItem]
   }
 }
@@ -103,7 +113,7 @@ extension SelectedPlaceVC: UICollectionViewDropDelegate {
     }
     return UICollectionViewDropProposal(operation: .forbidden)
   }
-  
+
   func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
     var destinationIndexPath: IndexPath
     if let indexPath = coordinator.destinationIndexPath {
@@ -112,7 +122,7 @@ extension SelectedPlaceVC: UICollectionViewDropDelegate {
       let row = sView?.PlacesCollectionView.numberOfItems(inSection: 0) ?? 0
       destinationIndexPath = IndexPath(item: row - 1, section: 0)
     }
-    
+
     if coordinator.proposal.operation == .copy {
       copyItems(coordinator: coordinator, destinationIndexPath: destinationIndexPath, collectionView: collectionView)
     }
@@ -129,7 +139,7 @@ extension SelectedPlaceVC: UICollectionViewDropDelegate {
         }
       }
       let contact = People(name: data[0], phoneNumber: data[1])
-      
+
       selectedContacs.append(contact)
       LocationManager.shared.updatePlace(data: ["people": selectedContacs.map { $0.toDictionary() }], latitude: selectedPlace!.latitude)
 

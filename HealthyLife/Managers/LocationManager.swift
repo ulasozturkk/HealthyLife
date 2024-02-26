@@ -70,4 +70,38 @@ class LocationManager {
       }
     }
   }
+
+  func getContacsOnDB(latitude: CLLocationDegrees, completion: @escaping ([FavPlaces]) -> ()) {
+    var docID = ""
+    var contactList: [FavPlaces] = []
+    let userCollectionRef = firestore.collection("users")
+    if let currentUser = Auth.auth().currentUser {
+      let userRef = userCollectionRef.document(currentUser.uid)
+      let placesCollection = userRef.collection("places")
+      let query = placesCollection.whereField("latitude", isEqualTo: latitude).getDocuments { snapshot, error in
+        if let error = error {}
+        if let peopleList = snapshot?.documents {
+          for people in peopleList {
+            let data = people.data()
+            
+            do {
+              if let jsonData = try JSONSerialization.data(withJSONObject: data) as? Data {
+                do {
+                  let decodedData = try JSONDecoder().decode(FavPlaces.self, from: jsonData)
+                  contactList.append(decodedData)
+                } catch let decodingError {
+                  print("Data decode edilemedi: \(decodingError.localizedDescription)")
+                }
+              } else {
+                print("Data çözülemedi.")
+              }
+            } catch let serializationError {
+              print("JSON verisi `Data`'ya çözülemedi: \(serializationError.localizedDescription)")
+            }
+          }
+          completion(contactList)
+        }
+      }
+    }
+  }
 }
