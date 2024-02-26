@@ -39,47 +39,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A291282A-03DE-4356-8F5D-C8BC1324AAF5"
+            uuid = "DD998D5C-8C6F-465B-A845-B8C0C1F8D140"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HealthyLife/Features/Map/FavPlaces/SelectedPlace/SelectedPlaceVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "loadView()"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "copyItems(coordinator:destinationIndexPath:collectionView:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A291282A-03DE-4356-8F5D-C8BC1324AAF5 - 8cb2beaefe6248eb"
+                  uuid = "DD998D5C-8C6F-465B-A845-B8C0C1F8D140 - fc2c82779667ff9d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "HealthyLife.SelectedPlaceVC.loadView() -&gt; ()"
+                  symbolName = "closure #1 () -&gt; () in HealthyLife.SelectedPlaceVC.copyItems(coordinator: __C.UICollectionViewDropCoordinator, destinationIndexPath: Foundation.IndexPath, collectionView: __C.UICollectionView) -&gt; ()"
                   moduleName = "HealthyLife"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/macbookpro/Desktop/HealthyLife/HealthyLife/Features/Map/FavPlaces/SelectedPlace/SelectedPlaceVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "516">
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "712">
                </Location>
                <Location
-                  uuid = "A291282A-03DE-4356-8F5D-C8BC1324AAF5 - 8cb2beaefe624884"
+                  uuid = "DD998D5C-8C6F-465B-A845-B8C0C1F8D140 - fc2c82779667ff9d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "HealthyLife.SelectedPlaceVC.loadView() -&gt; ()"
+                  symbolName = "closure #1 () -&gt; () in HealthyLife.SelectedPlaceVC.copyItems(coordinator: __C.UICollectionViewDropCoordinator, destinationIndexPath: Foundation.IndexPath, collectionView: __C.UICollectionView) -&gt; ()"
                   moduleName = "HealthyLife"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/macbookpro/Desktop/HealthyLife/HealthyLife/Features/Map/FavPlaces/SelectedPlace/SelectedPlaceVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "608">
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "860">
                </Location>
             </Locations>
          </BreakpointContent>

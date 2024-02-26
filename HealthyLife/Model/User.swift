@@ -32,4 +32,8 @@ struct People: Codable {
     case name
     case phoneNumber
   }
+
+  func toDictionary() -> [String: Any] {
+    return ["name": name, "phoneNumber": phoneNumber]
+  }
 }

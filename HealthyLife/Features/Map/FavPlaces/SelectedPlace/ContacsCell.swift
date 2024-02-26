@@ -5,7 +5,7 @@ import UIKit
 class ContacsCell: UICollectionViewCell {
   static let identifier = "ContacsCell"
   private let image: UIImageView = {
-    let iv = customImageView(image: UIImage(named: "profile.jpeg")!, cornerRadius: 12)
+    let iv = customImageView(image: UIImage(named: "profile.jpeg")!)
     iv.tintColor = .white
     iv.backgroundColor = .blue
     
@@ -13,7 +13,7 @@ class ContacsCell: UICollectionViewCell {
   }()
   private let nameLabel = customLabel(text: "", fontName: ConstantFonts.italic)
   private let phoneLabel = customLabel(text: "", fontName: ConstantFonts.light)
-  
+  let sH = UIScreen.main.bounds.height
                                                                                       
   public var item: People! {
     didSet{
@@ -35,11 +35,10 @@ class ContacsCell: UICollectionViewCell {
   
   private func buildImageView() {
     addSubview(image)
-    
-    image.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+
     image.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
     image.centerYAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.centerYAnchor).isActive = true
-    image.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.6).isActive = true
+    image.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4).isActive = true
 
   }
   private func buildNameLabel(){
