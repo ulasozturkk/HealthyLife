@@ -19,6 +19,7 @@ class MapHomeVC: UIViewController {
     let pinLocationRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(addPin))
     sView?.mapView.addGestureRecognizer(pinLocationRecognizer)
     sView?.favButton.addTarget(self, action: #selector(goPlaces), for: .touchUpInside)
+    
   }
 
   @objc func goPlaces() {

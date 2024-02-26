@@ -22,6 +22,11 @@
 		52397ED72B88C64800DE18B5 /* customImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52397ED62B88C64800DE18B5 /* customImageView.swift */; };
 		52397EDA2B88DDEE00DE18B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52397ED92B88DDEE00DE18B5 /* GoogleService-Info.plist */; };
 		5271ED0F2B8C6305000930E5 /* FavPlacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271ED0E2B8C6305000930E5 /* FavPlacesCell.swift */; };
+		5271ED132B8C71FF000930E5 /* SelectedPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271ED122B8C71FF000930E5 /* SelectedPlaceView.swift */; };
+		5271ED152B8C720C000930E5 /* SelectedPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271ED142B8C720C000930E5 /* SelectedPlaceVC.swift */; };
+		5271ED172B8C724B000930E5 /* ContacsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271ED162B8C724B000930E5 /* ContacsCell.swift */; };
+		5271ED192B8C77EE000930E5 /* PlacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271ED182B8C77EE000930E5 /* PlacesCell.swift */; };
+		5271ED1B2B8C8033000930E5 /* ContacsManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271ED1A2B8C8033000930E5 /* ContacsManeger.swift */; };
 		528513B32B8A30B200F7442F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B22B8A30B200F7442F /* SignUpView.swift */; };
 		528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B42B8A30C300F7442F /* SignUpVC.swift */; };
 		528513B72B8A311200F7442F /* ConstantComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528513B62B8A311200F7442F /* ConstantComponents.swift */; };
@@ -64,6 +69,11 @@
 		52397ED62B88C64800DE18B5 /* customImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customImageView.swift; sourceTree = "<group>"; };
 		52397ED92B88DDEE00DE18B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5271ED0E2B8C6305000930E5 /* FavPlacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavPlacesCell.swift; sourceTree = "<group>"; };
+		5271ED122B8C71FF000930E5 /* SelectedPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPlaceView.swift; sourceTree = "<group>"; };
+		5271ED142B8C720C000930E5 /* SelectedPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPlaceVC.swift; sourceTree = "<group>"; };
+		5271ED162B8C724B000930E5 /* ContacsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacsCell.swift; sourceTree = "<group>"; };
+		5271ED182B8C77EE000930E5 /* PlacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCell.swift; sourceTree = "<group>"; };
+		5271ED1A2B8C8033000930E5 /* ContacsManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacsManeger.swift; sourceTree = "<group>"; };
 		528513B22B8A30B200F7442F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		528513B42B8A30C300F7442F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		528513B62B8A311200F7442F /* ConstantComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantComponents.swift; sourceTree = "<group>"; };
@@ -194,6 +204,10 @@
 		5271ED102B8C678A000930E5 /* SelectedPlace */ = {
 			isa = PBXGroup;
 			children = (
+				5271ED122B8C71FF000930E5 /* SelectedPlaceView.swift */,
+				5271ED142B8C720C000930E5 /* SelectedPlaceVC.swift */,
+				5271ED162B8C724B000930E5 /* ContacsCell.swift */,
+				5271ED182B8C77EE000930E5 /* PlacesCell.swift */,
 			);
 			path = SelectedPlace;
 			sourceTree = "<group>";
@@ -204,6 +218,7 @@
 				528513BB2B8A513800F7442F /* SessionManager.swift */,
 				52AC81C72B8B4E3C001A8F1D /* UserManager.swift */,
 				52AC81C92B8B56F2001A8F1D /* LocationManager.swift */,
+				5271ED1A2B8C8033000930E5 /* ContacsManeger.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -433,6 +448,7 @@
 				528513C42B8A683000F7442F /* MapHomeView.swift in Sources */,
 				523423CB2B88B028001F8EE0 /* BaseView.swift in Sources */,
 				52397ECE2B88BBE400DE18B5 /* ConstantFonts.swift in Sources */,
+				5271ED1B2B8C8033000930E5 /* ContacsManeger.swift in Sources */,
 				528513B92B8A34AC00F7442F /* customStackView.swift in Sources */,
 				528513C62B8A683C00F7442F /* MapHomeVC.swift in Sources */,
 				52397ED72B88C64800DE18B5 /* customImageView.swift in Sources */,
@@ -447,13 +463,17 @@
 				52AC81CA2B8B56F2001A8F1D /* LocationManager.swift in Sources */,
 				52397ED52B88C59F00DE18B5 /* customLabel.swift in Sources */,
 				52397EBD2B88B4E700DE18B5 /* SignInView.swift in Sources */,
+				5271ED132B8C71FF000930E5 /* SelectedPlaceView.swift in Sources */,
 				52D4CD852B8BD3AD00405F85 /* FavPlacesView.swift in Sources */,
 				52DA5F8D2B889A2B00A97A77 /* AppDelegate.swift in Sources */,
 				528513B52B8A30C300F7442F /* SignUpVC.swift in Sources */,
 				52AC81C82B8B4E3C001A8F1D /* UserManager.swift in Sources */,
 				52397EBF2B88B4F100DE18B5 /* SignInVC.swift in Sources */,
+				5271ED172B8C724B000930E5 /* ContacsCell.swift in Sources */,
 				52E8518F2B8A8A3500DE97F8 /* StatsVC.swift in Sources */,
+				5271ED152B8C720C000930E5 /* SelectedPlaceVC.swift in Sources */,
 				528513BC2B8A513800F7442F /* SessionManager.swift in Sources */,
+				5271ED192B8C77EE000930E5 /* PlacesCell.swift in Sources */,
 				52397ED32B88BD8100DE18B5 /* customButton.swift in Sources */,
 				52E851912B8A8A4100DE97F8 /* StatsView.swift in Sources */,
 				52E8518B2B8A8A1E00DE97F8 /* ProfileView.swift in Sources */,
@@ -606,6 +626,7 @@
 				DEVELOPMENT_TEAM = 2758CUH3C2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthyLife/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "we need to access your contacs for use this feature";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location usage";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -636,6 +657,7 @@
 				DEVELOPMENT_TEAM = 2758CUH3C2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthyLife/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "we need to access your contacs for use this feature";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location usage";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

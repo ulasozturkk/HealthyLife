@@ -2,8 +2,13 @@
 
 import UIKit
 
+protocol DataTransferDelegate {
+  func sendData(data: FavPlaces)
+}
+
 class FavPlacesVC: UIViewController {
 
+  var delegate : DataTransferDelegate?
   var sView: FavPlacesView?
   var favPlaces: [FavPlaces] = []
   override func loadView() {
@@ -51,5 +56,12 @@ extension FavPlacesVC: UITableViewDelegate,UITableViewDataSource {
       tableView.deleteRows(at: [indexPath], with: .fade)
     }
   }
-  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let selectedData = favPlaces[indexPath.row]
+    let selectedPlaceVC = SelectedPlaceVC()
+    self.delegate = selectedPlaceVC
+    delegate?.sendData(data: selectedData)
+    navigationController?.pushViewController(selectedPlaceVC, animated: true)
+    
+  }
 }
