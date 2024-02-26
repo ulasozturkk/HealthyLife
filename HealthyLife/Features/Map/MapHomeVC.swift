@@ -18,6 +18,12 @@ class MapHomeVC: UIViewController {
     locationManager.startUpdatingLocation()
     let pinLocationRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(addPin))
     sView?.mapView.addGestureRecognizer(pinLocationRecognizer)
+    sView?.favButton.addTarget(self, action: #selector(goPlaces), for: .touchUpInside)
+    
+  }
+
+  @objc func goPlaces() {
+    navigationController?.pushViewController(FavPlacesVC(), animated: true)
   }
 
   func checkFavPlaces() -> [MKPointAnnotation] {
@@ -69,18 +75,53 @@ class MapHomeVC: UIViewController {
       present(alertController, animated: true)
     }
   }
+
+  func getDirections(from source: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D) {
+    let sourcePlacemark = MKPlacemark(coordinate: source)
+    let destinationPlacemark = MKPlacemark(coordinate: destination)
+    let sourceItem = MKMapItem(placemark: sourcePlacemark)
+    let destinationItem = MKMapItem(placemark: destinationPlacemark)
+    let request = MKDirections.Request()
+    request.source = sourceItem
+    request.destination = destinationItem
+    request.transportType = .walking
+
+    let directions = MKDirections(request: request)
+
+    directions.calculate { response, _ in
+      guard let route = response?.routes.first else { return }
+      self.sView?.mapView.addOverlay(route.polyline, level: .aboveRoads)
+      let region = MKCoordinateRegion(center: source, span: MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003))
+      self.sView!.mapView.setRegion(region, animated: true)
+    }
+  }
 }
 
 extension MapHomeVC: MKMapViewDelegate {
   func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
     guard let pin = view.annotation as? MKPointAnnotation else { return }
-    let data = ["placeName": "bu bir denemdir"] as [String: Any]
-    LocationManager.shared.updatePlace(data: data, latitude: pin.coordinate.latitude)
+    let alert = UIAlertController(title: pin.title, message: "Choose An Option", preferredStyle: .alert)
+    let direction = UIAlertAction(title: "Get Direction", style: .cancel) { _ in
+      if let userLocation = self.locationManager.location?.coordinate {
+        self.getDirections(from: userLocation, to: pin.coordinate)
+        
+      }
+    }
+    let cancel = UIAlertAction(title: "Cancel", style: .destructive)
+    alert.addAction(direction)
+    alert.addAction(cancel)
+    present(alert, animated: true)
   }
-  
-  
-  
-  
+
+  func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    if let polyLine = overlay as? MKPolyline {
+      let renderer = MKPolylineRenderer(polyline: polyLine)
+      renderer.strokeColor = UIColor.blue
+      renderer.lineWidth = 3
+      return renderer
+    }
+    return MKOverlayRenderer()
+  }
 }
 
 extension MapHomeVC: CLLocationManagerDelegate {

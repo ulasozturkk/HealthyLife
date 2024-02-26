@@ -26,12 +26,10 @@ struct FavPlaces: Codable {
 
 struct People: Codable {
   var name: String
-  var age: Int
   var phoneNumber: String
 
   enum CodingKeys: String, CodingKey {
     case name
-    case age
     case phoneNumber
   }
 }
