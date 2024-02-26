@@ -19,7 +19,7 @@ class LocationManager {
   }
   
   func getPlaces(completion: @escaping ([FavPlaces]) -> ()) {
-    var places : [FavPlaces] = []
+    var places: [FavPlaces] = []
     let userCollectionRef = firestore.collection("users")
     if let currentUser = Auth.auth().currentUser {
       let userRef = userCollectionRef.document(currentUser.uid)
@@ -52,6 +52,21 @@ class LocationManager {
         guard let documents = snapshot?.documents else { return }
         docID = documents.first!.documentID
         placesCollection.document(docID).setData(data, merge: true)
+      }
+    }
+  }
+  
+  func deletePlace(latitude: CLLocationDegrees) {
+    var docID = ""
+    let userCollectionRef = firestore.collection("users")
+    if let currentUser = Auth.auth().currentUser {
+      let userRef = userCollectionRef.document(currentUser.uid)
+      let placesCollection = userRef.collection("places")
+      let query = placesCollection.whereField("latitude", isEqualTo: latitude).getDocuments { snapshot, error in
+        if let error = error {}
+        guard let documents = snapshot?.documents.first else { return }
+        docID = documents.documentID
+        placesCollection.document(docID).delete()
       }
     }
   }
